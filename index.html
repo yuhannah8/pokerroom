@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f6f2">
+<meta name="description" content="獨立撲克社群：策略交流、玩家資源與平台官方資訊入口。">
+<title>RIVER ROOM｜撲克玩家社群</title>
+<style>
+:root{--bg:#f7f6f2;--paper:#fff;--ink:#202722;--muted:#68716b;--line:#e4e7e0;--green:#315b4b;--pale:#e0e9e2;--radius:22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif}
+a{color:inherit}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}.top{border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none}.mark{width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:var(--green);color:#fff;font-size:21px}.brand b{letter-spacing:.12em;font-size:.92rem}.brand small{display:block;color:var(--muted);font-size:.7rem;letter-spacing:.06em}
+.links{display:flex;gap:22px;color:var(--muted);font-size:.9rem}.links a{text-decoration:none}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:999px;padding:11px 17px;min-height:45px;text-decoration:none;font:inherit;font-weight:750;cursor:pointer}.primary{background:var(--green);color:#fff}.light{background:#fff;border-color:var(--line);color:var(--ink)}.small{min-height:39px;padding:7px 12px;font-size:.86rem}
+.hero{padding:72px 0 48px}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}.eyebrow{font-size:.75rem;color:var(--green);font-weight:850;letter-spacing:.16em}
+h1{font-size:clamp(2.6rem,6vw,4.8rem);line-height:1.04;letter-spacing:-.06em;margin:16px 0 20px}h1 em{color:var(--green);font-style:normal}.lead{font-size:1.06rem;color:var(--muted);max-width:57ch}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}.note{font-size:.82rem;color:var(--muted);margin-top:16px}
+.art{min-height:320px;border-radius:28px;background:var(--pale);padding:25px;display:flex;align-items:flex-end;position:relative;overflow:hidden}.art:before,.art:after{content:"";position:absolute;border:1px solid #315b4b33;border-radius:50%;top:-60px;right:-45px;width:270px;height:270px}.art:after{top:-20px;right:-5px;width:190px;height:190px}.suits{position:absolute;top:24px;left:27px;font-size:2rem;letter-spacing:.2em;color:var(--green)}.quote{position:relative;z-index:1;background:#ffffffd9;border:1px solid #ffffff;border-radius:18px;padding:22px;width:100%}.quote strong{font-size:1.27rem;line-height:1.4;display:block}.quote small{color:var(--muted);display:block;margin-top:9px}
+section{padding:30px 0}.head{margin-bottom:20px}.head h2,h2{font-size:clamp(1.65rem,3vw,2.25rem);letter-spacing:-.045em;line-height:1.2;margin:8px 0}.intro{color:var(--muted);max-width:60ch;margin:8px 0 0}
+.resources{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.resource,.platform{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:23px;box-shadow:0 14px 42px #20272208}.icon{height:42px;width:42px;border-radius:14px;background:var(--pale);color:var(--green);display:grid;place-items:center;font-size:1.2rem;margin-bottom:18px}.resource h3{margin:0 0 7px}.resource p,.platform p{color:var(--muted);font-size:.94rem;margin:0}
+.platforms{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.platform{display:flex;flex-direction:column;min-height:300px}.ptop{display:flex;align-items:center;justify-content:space-between;gap:10px}.label{font-size:.74rem;letter-spacing:.13em;color:var(--muted);font-weight:800}.tag{background:#f0f1ed;color:#59635c;border-radius:999px;padding:5px 9px;font-size:.74rem;font-weight:700}.platform h3{font-size:1.5rem;letter-spacing:-.04em;margin:15px 0 8px}.platform ul{padding-left:19px;color:var(--muted);font-size:.9rem;margin:15px 0 20px}.codebox{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#f5f6f2;border:1px dashed #cdd7cf;border-radius:13px;padding:11px;margin-bottom:14px}.codebox span{font-weight:800;letter-spacing:.04em;overflow-wrap:anywhere}.platform-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}.btn[aria-disabled=true]{opacity:.45;pointer-events:none}.status{font-size:.83rem;color:var(--green);min-height:1.5em;margin-top:7px}
+.band{margin-top:32px;padding:30px;border-radius:26px;background:var(--green);color:white;display:grid;grid-template-columns:1fr auto;align-items:center;gap:20px}.band .eyebrow{color:#d9e8dc}.band p{color:#ffffffc9;margin:8px 0 0;max-width:60ch}.band .btn{background:white;color:var(--green);white-space:nowrap}
+.faq{max-width:820px}details{padding:16px 0;border-bottom:1px solid var(--line)}summary{font-weight:750;cursor:pointer}details p{color:var(--muted);margin:9px 0 0}.disclosure{margin-top:28px;padding:16px 18px;background:#eeede7;border:1px solid #e2e0d8;border-radius:15px;color:#58615b;font-size:.84rem}
+footer{margin-top:45px;padding:25px 0 38px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}.foot{display:flex;justify-content:space-between;gap:20px}.footlinks{display:flex;gap:15px;flex-wrap:wrap}.footlinks a{text-decoration:none}
+@media(max-width:760px){.wrap{width:min(100% - 26px,620px)}.links{display:none}.hero{padding:46px 0 24px}.hero-grid{grid-template-columns:1fr;gap:25px}.art{min-height:270px}.resources,.platforms{grid-template-columns:1fr}.band{grid-template-columns:1fr;padding:24px}.band .btn{justify-self:start}.foot{display:block}.footlinks{margin-top:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap nav">
+<a class="brand" href="#"><span class="mark">♠</span><span><b id="brandName">RIVER ROOM</b><small id="subtitle">POKER COMMUNITY</small></span></a>
+<nav class="links"><a href="#resources">社群資源</a><a href="#platforms">平台資訊</a><a href="#faq">常見問題</a></nav>
+<a class="btn primary small" href="#platforms">平台入口</a>
+</div></header>
+<main>
+<section class="wrap hero"><div class="hero-grid">
+<div><div class="eyebrow" id="eyebrow">PLAY THOUGHTFULLY</div><h1 id="heroTitle">認真研究牌局。<br><em>自在交流。</em></h1>
+<p class="lead" id="heroDescription">一個以策略學習、實戰討論與玩家資源為核心的獨立撲克社群。從理解決策開始，找到適合自己的學習方式與平台資訊。</p>
+<div class="actions"><a class="btn primary" href="#resources">探索社群資源 ↘</a><a class="btn light" href="#platforms">查看平台資訊</a></div>
+<p class="note">獨立社群資訊頁｜非平台官方網站｜推薦關係與風險揭露請見頁面下方。</p></div>
+<div class="art" aria-hidden="true"><div class="suits">♠ ♣ ♦ ♥</div><div class="quote"><div class="eyebrow">THE PLAYER'S ROOM</div><strong>好的決策，來自理解，而不是追逐結果。</strong><small>策略交流・牌局拆解・玩家資源</small></div></div>
+</div></section>
+<section class="wrap" id="resources"><div class="head"><div class="eyebrow">COMMUNITY RESOURCES</div><h2>把注意力放回學習本身。</h2><p class="intro">整理適合玩家持續使用的內容方向。社群重視策略、資訊透明與理性參與，不以保證獲利作為宣傳。</p></div>
+<div class="resources">
+<article class="resource"><div class="icon">⌁</div><h3>策略與牌局分析</h3><p>從位置、下注尺度、範圍與決策流程切入，整理能反覆學習的牌局觀念。</p></article>
+<article class="resource"><div class="icon">◎</div><h3>玩家經驗交流</h3><p>分享實戰心得、常見疑問與學習方法。尊重不同經驗，不以單次輸贏評斷能力。</p></article>
+<article class="resource"><div class="icon">↗</div><h3>平台官方資訊</h3><p>集中整理平台介紹與官方入口。註冊資格、服務範圍與條款請以平台公告為準。</p></article>
+</div></section>
+<section class="wrap" id="platforms"><div class="head"><div class="eyebrow">PLATFORM DIRECTORY</div><h2>平台資訊入口</h2><p class="intro">請先閱讀各平台官方條款與資格要求，再決定是否註冊。這是獨立推薦資訊，不代表平台官方背書。</p></div>
+<div class="platforms">
+<article class="platform"><div class="ptop"><span class="label">PLATFORM A</span><span class="tag">資料待確認</span></div><h3 id="nameA">Natural8</h3><p id="descA">請填入經確認的官方平台介紹，例如可用地區、遊戲類型與官方註冊流程。</p>
+<ul><li>使用官方提供的專屬註冊連結</li><li>推薦碼及資格要求以官方頁面為準</li><li>確認所在地法律與平台條款</li></ul>
+<div class="codebox"><span id="codeA">尚未設定推薦碼</span><button class="btn light small" id="copyA" type="button" disabled>複製碼</button></div>
+<div class="platform-actions"><a class="btn primary" id="registerA" href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer">官方註冊入口 ↗</a><a class="btn light" id="infoA" href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer">官方資訊 ↗</a></div><div class="status" id="statusA" role="status" aria-live="polite"></div></article>
+<article class="platform"><div class="ptop"><span class="label">PLATFORM B</span><span class="tag">待補資料</span></div><h3 id="nameB">第二平台（待確認）</h3><p id="descB">平台名稱、官方介紹與註冊連結尚未提供。完成確認後再公開此入口。</p>
+<ul><li>請勿使用未核實的註冊網址</li><li>推薦碼欄位依平台流程設定</li><li>代理條款與分潤規則需個別確認</li></ul>
+<div class="codebox"><span id="codeB">尚未設定推薦碼</span><button class="btn light small" id="copyB" type="button" disabled>複製碼</button></div>
+<div class="platform-actions"><a class="btn primary" id="registerB" href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer">官方註冊入口 ↗</a><a class="btn light" id="infoB" href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer">官方資訊 ↗</a></div><div class="status" id="statusB" role="status" aria-live="polite"></div></article>
+</div>
+<div class="band"><div><div class="eyebrow">A THOUGHTFUL POKER COMMUNITY</div><h2>先理解，再做選擇。</h2><p>把這個頁面放在社群置頂、個人簡介或影片資訊欄，作為策略資源與平台官方資訊的共同入口。</p></div><a class="btn" href="#resources">瀏覽社群資源 ↗</a></div>
+</section>
+<section class="wrap faq" id="faq"><div class="eyebrow">HELP & DISCLOSURE</div><h2>常見問題</h2>
+<details><summary>這是平台官方網站嗎？</summary><p>不是。這是獨立撲克社群的資訊入口。平台名稱、標誌及連結的使用應符合平台品牌規範；請不要讓訪客誤以為本頁由平台官方營運。</p></details>
+<details><summary>推薦碼要在哪裡輸入？</summary><p>不同平台流程可能不同。請依官方註冊頁指示操作；若推薦碼未自動帶入或沒有欄位，請先向官方客服或代理支援確認。</p></details>
+<details><summary>點擊註冊連結就算有效註冊嗎？</summary><p>不算。本頁可以統計瀏覽、複製推薦碼與註冊按鈕點擊；實際註冊、推薦關係綁定及分潤資格，必須以平台授權的代理後台、報表或轉換追蹤為準。</p></details>
+<details><summary>網站會收集平台帳密嗎？</summary><p>不會。本頁不應要求或收集平台密碼、驗證碼或其他敏感帳戶資料。請只在確認過的官方網站輸入帳戶資訊。</p></details>
+<div class="disclosure"><strong>合作關係與風險揭露：</strong>本頁可能包含代理推薦連結。若訪客透過連結註冊，頁面經營者可能依平台代理制度取得佣金或分潤；這不代表玩家會獲利，也不保證任何遊戲結果。撲克可能涉及財務風險，請只在所在地法律允許、符合平台資格與法定年齡的前提下理性參與。上線前請確認代理合約、平台推廣規範及適用法律。</div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><strong id="footerName">RIVER ROOM</strong><div style="margin-top:6px">獨立撲克社群資訊入口 · 非平台官方網站</div></div><div class="footlinks"><a href="#resources">社群資源</a><a href="#platforms">平台資訊</a><a href="#faq">常見問題</a></div></div></footer>
+<script>
+/* 上線前請修改 CONFIG。未填真實網址時，對應按鈕會停用。 */
+const CONFIG = {
+  brand: {
+    name: "RIVER ROOM",
+    subtitle: "POKER COMMUNITY",
+    eyebrow: "PLAY THOUGHTFULLY",
+    titleHtml: "認真研究牌局。<br><em>自在交流。</em>",
+    description: "一個以策略學習、實戰討論與玩家資源為核心的獨立撲克社群。從理解決策開始，找到適合自己的學習方式與平台資訊。"
+  },
+  platforms: {
+    A: {
+      name: "Natural8",
+      description: "請填入經確認的官方平台介紹，例如可用地區、遊戲類型與官方註冊流程。",
+      referralCode: "yuhanpoker",
+      referralUrl: " https://www.natural8.com/sign-up?ref=yuhanpoker",
+      officialUrl: ""
+    },
+    B: {
+      name: "coinpoker",
+      description: "平台名稱、官方介紹與註冊連結尚未提供。完成確認後再公開此入口。",
+      referralCode: "YUHANPOKER",
+      referralUrl: "https://play.coinpoker.com/register?refer_by=eXVoYW5wb2tlcg==",
+      officialUrl: ""
+    }
+  },
+  tracking: {
+    ga4MeasurementId: "", // 可選：例如 G-XXXXXXXXXX；留空就停用 GA4
+    forwardUtmToAffiliateLinks: false // 只有平台確認支援時才改成 true
+  }
+};
+const params = new URLSearchParams(location.search);
+const source = (params.get("utm_source") || "direct").slice(0,80);
+const medium = (params.get("utm_medium") || "none").slice(0,80);
+const campaign = (params.get("utm_campaign") || "default").slice(0,100);
+function track(eventName, extra={}) {
+  const data = {event:eventName,source,medium,campaign,page_path:location.pathname,...extra};
+  if (typeof window.gtag === "function") window.gtag("event",eventName,data);
+  else console.info("[RIVER ROOM analytics - local only]",data);
+}
+function loadGA4(id) {
+  if (!/^G-[A-Z0-9]+$/i.test(id)) return;
+  const s=document.createElement("script");s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id="+encodeURIComponent(id);document.head.appendChild(s);
+  window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};
+  window.gtag("js",new Date());window.gtag("config",id,{anonymize_ip:true});
+}
+function validUrl(s){try{const u=new URL(s);return u.protocol==="https:"||u.protocol==="http:"}catch{return false}}
+function finalUrl(raw){
+  if(!validUrl(raw)) return "";
+  if(!CONFIG.tracking.forwardUtmToAffiliateLinks) return raw;
+  const u=new URL(raw);if(source!=="direct")u.searchParams.set("utm_source",source);if(medium!=="none")u.searchParams.set("utm_medium",medium);if(campaign!=="default")u.searchParams.set("utm_campaign",campaign);return u.toString();
+}
+function setupLink(id,raw,event,platform,dest){
+  const el=document.getElementById(id),url=finalUrl(raw);
+  if(!url){el.href="#";el.setAttribute("aria-disabled","true");return}
+  el.href=url;el.setAttribute("aria-disabled","false");el.addEventListener("click",()=>track(event,{platform,destination:dest}));
+}
+function setupPlatform(k){
+  const p=CONFIG.platforms[k],suffix=k;
+  document.getElementById("name"+suffix).textContent=p.name||"平台名稱待補";
+  document.getElementById("desc"+suffix).textContent=p.description||"請填入已確認的官方資訊。";
+  const code=document.getElementById("code"+suffix),copy=document.getElementById("copy"+suffix),status=document.getElementById("status"+suffix);
+  if(p.referralCode&&p.referralCode.trim()){
+    code.textContent=p.referralCode.trim();copy.disabled=false;
+    copy.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(p.referralCode.trim());status.textContent="推薦碼已複製，請依官方註冊頁指示使用。";track("referral_code_copy",{platform:k})}catch{status.textContent="無法自動複製，請手動選取推薦碼。"}});
+  }
+  setupLink("register"+suffix,p.referralUrl,"referral_click",k,"registration");
+  setupLink("info"+suffix,p.officialUrl,"official_info_click",k,"official_info");
+}
+document.getElementById("brandName").textContent=CONFIG.brand.name;
+document.getElementById("subtitle").textContent=CONFIG.brand.subtitle;
+document.getElementById("footerName").textContent=CONFIG.brand.name;
+document.getElementById("eyebrow").textContent=CONFIG.brand.eyebrow;
+document.getElementById("heroTitle").innerHTML=CONFIG.brand.titleHtml;
+document.getElementById("heroDescription").textContent=CONFIG.brand.description;
+setupPlatform("A");setupPlatform("B");loadGA4(CONFIG.tracking.ga4MeasurementId);track("landing_view");
+</script>
+</body></html>
