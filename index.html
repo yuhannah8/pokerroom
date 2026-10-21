@@ -62,23 +62,59 @@ footer{margin-top:45px;padding:25px 0 38px;border-top:1px solid var(--line);colo
     <article class="resource">
       <div class="icon">◎</div>
       <h3>Discord 玩家社群</h3>
-      <p>加入 RIVER ROOM 的 Discord，參與玩家交流與話題討論。</p>
+      <p>加入 yuhan 的 Discord，參與玩家交流與話題討論。</p>
       <a class="btn primary" href="https://discord.gg/rjjpdvSr7T" target="_blank" rel="noopener noreferrer">加入 Discord ↗</a>
     </article>
   </div>
 </section>
   
-<section class="wrap" id="platforms"><div class="head"><div class="eyebrow">PLATFORM DIRECTORY</div><h2>平台資訊入口</h2><p class="intro">請先閱讀各平台官方條款與資格要求，再決定是否註冊。這是獨立推薦資訊，不代表平台官方背書。</p></div>
-<div class="platforms">
-<article class="platform"><div class="ptop"><span class="label">PLATFORM A</span><span class="tag">資料待確認</span></div><h3 id="nameA">Natural8</h3><p id="descA">請填入經確認的官方平台介紹，例如可用地區、遊戲類型與官方註冊流程。</p>
-<ul><li>使用官方提供的專屬註冊連結</li><li>推薦碼及資格要求以官方頁面為準</li><li>確認所在地法律與平台條款</li></ul>
-<div class="codebox"><span id="codeA">尚未設定推薦碼</span><button class="btn light small" id="copyA" type="button" disabled>複製碼</button></div>
-<div class="platform-actions"><a class="btn primary" id="registerA" href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer">官方註冊入口 ↗</a><a class="btn light" id="infoA" href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer">官方資訊 ↗</a></div><div class="status" id="statusA" role="status" aria-live="polite"></div></article>
-<article class="platform"><div class="ptop"><span class="label">PLATFORM B</span><span class="tag">待補資料</span></div><h3 id="nameB">第二平台（待確認）</h3><p id="descB">平台名稱、官方介紹與註冊連結尚未提供。完成確認後再公開此入口。</p>
-<ul><li>請勿使用未核實的註冊網址</li><li>推薦碼欄位依平台流程設定</li><li>代理條款與分潤規則需個別確認</li></ul>
-<div class="codebox"><span id="codeB">尚未設定推薦碼</span><button class="btn light small" id="copyB" type="button" disabled>複製碼</button></div>
-<div class="platform-actions"><a class="btn primary" id="registerB" href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer">官方註冊入口 ↗</a><a class="btn light" id="infoB" href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer">官方資訊 ↗</a></div><div class="status" id="statusB" role="status" aria-live="polite"></div></article>
-</div>
+
+<section class="wrap" id="platforms">
+  <div class="head">
+    <div class="eyebrow">PLATFORM DIRECTORY</div>
+    <h2>平台資訊入口</h2>
+    <p class="intro">選擇平台，查看註冊入口與推薦碼。</p>
+  </div>
+
+  <div class="platforms">
+    <article class="platform">
+      <div class="ptop">
+        <span class="label">PLATFORM A</span>
+      </div>
+      <h3 id="nameA">Natural8</h3>
+
+      <div class="codebox">
+        <span id="codeA">yuhanpoker</span>
+        <button class="btn light small" id="copyA" type="button">複製碼</button>
+      </div>
+
+      <div class="platform-actions">
+        <a class="btn primary" id="registerA" href="#" target="_blank" rel="noopener noreferrer">官方註冊入口 ↗</a>
+        <a class="btn light" id="infoA" href="#" target="_blank" rel="noopener noreferrer">官方資訊 ↗</a>
+      </div>
+      <div class="status" id="statusA" role="status" aria-live="polite"></div>
+    </article>
+
+    <article class="platform">
+      <div class="ptop">
+        <span class="label">PLATFORM B</span>
+      </div>
+      <h3 id="nameB">coinpoker</h3>
+
+      <div class="codebox">
+        <span id="codeB">YUHANPOKER</span>
+        <button class="btn light small" id="copyB" type="button">複製碼</button>
+      </div>
+
+      <div class="platform-actions">
+        <a class="btn primary" id="registerB" href="#" target="_blank" rel="noopener noreferrer">官方註冊入口 ↗</a>
+        <a class="btn light" id="infoB" href="#" target="_blank" rel="noopener noreferrer">官方資訊 ↗</a>
+      </div>
+      <div class="status" id="statusB" role="status" aria-live="polite"></div>
+    </article>
+  </div>
+</section>
+
 
 <div class="disclosure"><strong>合作關係與風險揭露：</strong>這不代表玩家會獲利，也不保證任何遊戲結果。撲克可能涉及財務風險，請只在所在地法律允許、符合平台資格與法定年齡的前提下理性參與。</div>
 </section>
@@ -97,14 +133,12 @@ const CONFIG = {
   platforms: {
     A: {
       name: "Natural8",
-      description: "請填入經確認的官方平台介紹，例如可用地區、遊戲類型與官方註冊流程。",
       referralCode: "yuhanpoker",
       referralUrl: " https://www.natural8.com/sign-up?ref=yuhanpoker",
       officialUrl: ""
     },
     B: {
       name: "coinpoker",
-      description: "平台名稱、官方介紹與註冊連結尚未提供。完成確認後再公開此入口。",
       referralCode: "YUHANPOKER",
       referralUrl: "https://play.coinpoker.com/register?refer_by=eXVoYW5wb2tlcg==",
       officialUrl: ""
